@@ -1,0 +1,39 @@
+#include "doorman.inc"
+
+camera{
+	location <0, 5.04, -2.34>
+	angle 90
+	right x*image_width/image_height
+	up y
+	rotate <344.5147, 0, 0>
+}
+
+light_source{
+    #declare intensity = 1;
+    <4.223688, 2.292344, -0.01> rgb <intensity, intensity, intensity>
+    parallel
+    point_at <4.745734, 1.5263, 0.3650269>
+}
+
+light_source{
+    #declare intensity = 1;
+    <4.223688, 2.292344, -2.411679> rgb <intensity, intensity, intensity>
+    parallel
+    point_at <4.223803, 1.5263, -3.054467>
+}
+
+light_source{
+    #declare intensity = 0.82;
+    <0.256, 5.508, -0.42> rgb <intensity, intensity, intensity>
+    fade_distance 4.13
+    fade_power 1
+}
+
+
+
+object{
+	doorman
+	rotate <0, 175.5061, 0>
+	translate <-0.007558, 0, 0.1926315>
+}
+
